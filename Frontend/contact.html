@@ -44,17 +44,18 @@
 
 <body id="body">
 
+<!-- Start Top Header Bar -->
 <section class="top-header">
 	<div class="container">
 		<div class="row">
-				<div class="col-md-4 col-xs-12 col-sm-4">
+			<div class="col-md-4 col-xs-12 col-sm-4">
 				<div class="contact-number">
 					<i class="tf-ion-ios-telephone"></i>
 					<span>4002-899-22</span>
 				</div>
 				<div class="contact-number">
 					<img src="images/perfil_Icon.png" height="18" width="18">
-					<a href="login.html">Login</a>
+					<a href="usuariocadastrado.html">Login</a>
 				</div>
 			</div>
 			<div class="col-md-4 col-xs-12 col-sm-4">
@@ -67,7 +68,7 @@
 							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="40"
 								font-family="AustinBold, Austin" font-weight="bold">
 								<g id="Group" transform="translate(-108.000000, -297.000000)" fill="#000000">
-									<text id="AVIATO">
+									<text id="MALUPI">
 										<tspan x="103" y="325">MALUPI</tspan>
 									</text>
 								</g>
@@ -169,74 +170,111 @@
 		</div><!-- / .container -->
 	</nav>
 </section>
+
 <section class="page-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="content">
-					<h1 class="page-name">Sobre Nós</h1>
+					<h1 class="page-name">Voluntários</h1>
 					<ol class="breadcrumb">
 						<li><a href="index.html">Menu</a></li>
-						<li class="active">Sobre Nós</li>
+						<li class="active">Voluntários</li>
 					</ol>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
+<section class="page-wrapper">
+	<div class="contact-section">
+		<div class="container">
+			<div class="row">
 
-<section class="about section">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<img class="img-responsive" src="images/about/pexels-matheus-bertelli-2467506.jpg">
-			</div>
-			<div class="col-md-6">
-				<h2 class="mt-40">Sobre o nosso projeto</h2>
-				<p>Criamos o MALUPI visando criar um espaço seguro para os artistas que ainda não foram descobertos ainda tenham um lugar para iniciar.</p>
-				<p>Nosso projeto só continua gerando tantos frutos por causa de nossos voluntários, que nos ajudam em diversas áreas. Contamos com equipes que vão de fotográfos a Devs que mantém o site ativo.</p>
-				<p>Se você gostou das nossas ideias e, principalmente, nossos objetivos, venha fazer parte dessa nossa familia.</p>
-				<a href="contact.html" class="btn btn-main mt-20">Venha fazer parte da equipe</a>
-			</div>
-		</div>
+				<!--Formulário-->
+				<div class="contact-form col-md-6 " >
+					<form id="contact-form" method="post" action="" role="form">
 
-<section class="team-members ">
-	<div class="container">
-		<div class="row">
-			<div class="title"><h2>Fundadores</h2></div>
-		</div>
-		<div class="row">
-			<div class="col-md-3">
-				<div class="team-member text-center">
-					<img class="img-circle" src="images/team/pexels2-christina-morillo-1181686.jpg">
-					<h4>Mônica Castanha</h4>
-					<p>Fundador</p>
+						<div class="form-group">
+							<input type="text" placeholder="Seu Nome" class="form-control" name="name" id="name">
+						</div>
+
+						<div class="form-group">
+							<input type="email" placeholder="Seu email" class="form-control" name="email" id="email">
+						</div>
+
+						<div class="form-group">
+							<input type="text" placeholder="Para qual vaga você se voluntaria?" class="form-control" name="subject" id="subject">
+						</div>
+
+						<div class="form-group">
+							<textarea rows="6" placeholder="Deixe um recado" class="form-control" name="message" id="message"></textarea>
+						</div>
+
+						<div id="mail-success" class="success">
+							Obrigado, seu formulário foi recebido :)
+						</div>
+
+						<div id="mail-fail" class="error">
+							Ops, algo deu errado. Tente novamente :(
+						</div>
+
+						<div id="cf-submit">
+							<input type="submit" id="contact-submit" class="btn btn-transparent" value="Enviar formulário">
+						</div>
+
+					</form>
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team-member text-center">
-					<img class="img-circle" src="images/team/pexels2-tony-zed-3990502.jpg">
-					<h4>Tiago Ventura</h4>
-					<p>Desenvolvedor</p>
+				<!-- ./End Contact Form -->
+
+				<!-- Contact Details -->
+				<div class="contact-details col-md-6 " >
+          <h4>Bote no mapa onde seria mais fácil para você atender.</h4>
+					<div class="google-map">
+						<div id="map"></div>
+					</div>
+					<ul class="contact-short-info" >
+						<li>
+							<i class="tf-ion-ios-home"></i>
+							<span>Avenida Lins de Vasconcelos, 930, São Paulo, SP</span>
+						</li>
+						<li>
+							<i class="tf-ion-android-phone-portrait"></i>
+							<span>Telefone: +55 4002-899-22</span>
+						</li>
+						<li>
+							<i class="tf-ion-android-globe"></i>
+							<span>Fax: +55 1907-5305</span>
+						</li>
+						<li>
+							<i class="tf-ion-android-mail"></i>
+							<span>Email: malupiatendimento@malupi.com.br</span>
+						</li>
+					</ul>
+					<!-- Footer Social Links -->
+					<div class="social-icon">
+						<ul>
+							<li><a class="fb-icon" href="https://www.facebook.com/themefisher"><i class="tf-ion-social-facebook"></i></a></li>
+							<li><a href="https://www.twitter.com/themefisher"><i class="tf-ion-social-twitter"></i></a></li>
+							<li><a href="https://themefisher.com/"><i class="tf-ion-social-dribbble-outline"></i></a></li>
+							<li><a href="https://themefisher.com/"><i class="tf-ion-social-googleplus-outline"></i></a></li>
+							<li><a href="https://themefisher.com/"><i class="tf-ion-social-pinterest-outline"></i></a></li>
+						</ul>
+					</div>
+					<!--/. End Footer Social Links -->
 				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team-member text-center">
-					<img class="img-circle" src="images/team/pexels-moose-photos-1587009.jpg">
-					<h4>Jasmin Silva</h4>
-					<p>Gerente</p>
-				</div>
-			</div>
-			<div class="col-md-3">
-				<div class="team-member text-center">
-					<img class="img-circle" src="images/team/pexels-anna-nekrashevich-6801642.jpg">
-					<h4>José Camargo</h4>
-					<p>Marketing</p>
-				</div>
-			</div>
-		</div>
+				<!-- / End Contact Details -->
+
+
+
+			</div> <!-- end row -->
+		</div> <!-- end container -->
 	</div>
 </section>
+
+
+
+
 
 
 
@@ -271,12 +309,11 @@
 					<li>
 						<a href="contact.html">Voluntarie-se</a>
 					</li>
+
 					<li>
 						<a href="about.html">Sobre Nós</a>
 					</li>
-					<li>
-						<a href="artesVR.html">Artes VR</a>
-					</li>
+
 					<li>
 						<a href="artesDeRua.html">Artes de Rua</a>
 					</li>

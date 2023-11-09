@@ -131,6 +131,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   font-weight: 200;
   border-radius: 0;
 }
+
 .btn-main.btn-icon i, .btn-icon.btn-small i, .btn-icon.btn-transparent i, .btn-icon.btn-solid-border i {
   font-size: 16px;
   vertical-align: middle;
@@ -331,6 +332,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   border-bottom: none;
   padding: 30px 0;
 }
+
 .page-header h1 {
   font-weight: 200;
   margin: 0 0 6px 0;
@@ -2304,7 +2306,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .footer {
-  background: #F7F7F7;
+  background: #4cb0df;
   padding: 50px 0;
 }
 .footer .footer-menu {
