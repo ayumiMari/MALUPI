@@ -50,30 +50,21 @@
       <div class="col-md-6 col-md-offset-3">
         <div class="block text-center">
           <a class="logo" href="index.html">
-            <img src="images/logo.png" alt=""> <!-- logo -->
+            <img src="images/logo.png" alt="">
           </a>
-          <h2 class="text-center">Crie sua Conta</h2>
-          <form class="text-left clearfix" action="index.html">
+          <h2 class="text-center">Bem-vindo de volta!</h2>
+          <form class="text-left clearfix" action="/usuariocadastrado" method="post">
             <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Primeiro Nome">
+              <input type="email" class="form-control"  placeholder="Email" name="email">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Sobrenome">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control"  placeholder="Nome de usuário">
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control"  placeholder="Email">
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control"  placeholder="Senha">
+              <input type="password" class="form-control" placeholder="Senha" name="senha">
             </div>
             <div class="text-center">
-              <button type="submit" class="btn btn-main text-center">Criar conta</button>
+              <button type="submit" class="btn btn-main text-center" >Login</button>
             </div>
           </form>
-          <p class="mt-20">Já tem uma conta?<a href="usuariocadastrado.html"> Login</a></p>
+          <p class="mt-20">Não tem uma conta?<a href="/cadastronovousuario"> Criar conta</a></p>
         </div>
       </div>
     </div>

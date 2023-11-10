@@ -56,10 +56,6 @@ app.post("/usuariocadastrado", async(req, res)=>{
  
 });
 
- 
-app.get("/usuariocadastrado", async(req, res)=> {
-    res.sendFile(__dirname+"/usuariocadastrado.html");
-});
 // fim da model usuario
  
  
@@ -114,9 +110,7 @@ app.post("/cadastronovousuario", async(req, res)=>{
     }
  
 });
-app.get("/cadastronovousuario", async(req, res)=> {
-    res.sendFile(__dirname+"/cadastronovousuario.html");
-});
+
 //fim model cadastro novo usario
 
 //criando a model triagem
@@ -158,11 +152,6 @@ app.post("/recebidosTriagem", async(req, res)=>{
     }
  
 });
-
- 
-app.get("/recebidosTriagem", async(req, res)=> {
-    res.sendFile(__dirname+"/index.html");
-});
 // fim da model triagem
 
 
@@ -191,7 +180,7 @@ app.post("/voluntariosTriagem", async(req, res)=>{
     }
  
     //teste mais importante da ac
-    const emailExiste2 = await Novousuario.findOne({email2:email2});
+    const emailExiste2 = await Voluntarios.findOne({emailV:emailV});
  
     if(emailExiste2){
         return res.status(400).json({error : "Esse email já está registrado no sistema. Faça login."});
@@ -215,13 +204,22 @@ app.post("/voluntariosTriagem", async(req, res)=>{
  
 });
 
+app.get("/usuariocadastrado", async(req, res)=> {
+    res.sendFile(__dirname+"/usuariocadastrado.html");
+});
+
+app.get("/cadastronovousuario", async(req, res)=> {
+    res.sendFile(__dirname+"/cadastronovousuario.html");
+});
+
+app.get("/recebidosTriagem", async(req, res)=> {
+    res.sendFile(__dirname+"/index.html");
+});
  
 app.get("/voluntariosTriagem", async(req, res)=> {
     res.sendFile(__dirname+"/contact.html");
 });
-// fim da model voluntários
 
- 
 //rota gerais
 app.get("/", async(req, res)=>{
     res.sendFile(__dirname +"/index.html");
