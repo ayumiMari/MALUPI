@@ -132,7 +132,7 @@ app.post("/recebidosTriagem", async(req, res)=>{
     }
  
     //teste mais importante da ac
-    const emailExiste2 = await Novousuario.findOne({email2:email2});
+    const emailExiste2 = await Novousuario.findOne({emailTriagem:emailTriagem});
  
     if(emailExiste2){
         return res.status(400).json({error : "Esse email já está registrado no sistema. Faça login."});
@@ -205,19 +205,19 @@ app.post("/voluntariosTriagem", async(req, res)=>{
 });
 
 app.get("/usuariocadastrado", async(req, res)=> {
-    res.sendFile(__dirname+"/usuariocadastrado.html");
+    res.sendFile(__dirname+"/usuariocadastrado.html"); //foi
 });
 
 app.get("/cadastronovousuario", async(req, res)=> {
-    res.sendFile(__dirname+"/cadastronovousuario.html");
+    res.sendFile(__dirname+"/cadastronovousuario.html"); //foi
 });
 
 app.get("/recebidosTriagem", async(req, res)=> {
-    res.sendFile(__dirname+"/index.html");
+    res.sendFile(__dirname+"/index.html"); 
 });
  
 app.get("/voluntariosTriagem", async(req, res)=> {
-    res.sendFile(__dirname+"/contact.html");
+    res.sendFile(__dirname+"/contact.html"); //foi
 });
 
 //rota gerais

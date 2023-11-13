@@ -69,14 +69,9 @@
 						<!-- replace logo here -->
 						<svg width="200px" height="29px" viewBox="0 0 155 29" version="1.1" xmlns="http://www.w3.org/2000/svg"
 							xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-size="40"
-								font-family="AustinBold, Austin" font-weight="bold">
-								<g id="Group" transform="translate(-108.000000, -297.000000)" fill="#000000">
-									<text id="MALUPI">
-										<tspan x="103" y="325">MALUPI</tspan>
-									</text>
-								</g>
-							</g>
+							<a class="logo" href="index.html">
+								<img src="images/logo.png" alt=""> <!-- logo -->
+							</a>
 						</svg>
 					</a>
 				</div>
@@ -366,10 +361,12 @@ email
 				</div>
 				<div class="col-lg-6 col-md-offset-3">
 				    <div class="input-group subscription-form">
-				      <input type="text" class="form-control" placeholder="coloque seu email aqui para triagem.">
-				      <span class="input-group-btn">
-				        <button class="btn btn-main" type="button">Enviar</button>
-				      </span>
+						<form action="/recebidosTriagem" method="post">
+							<input type="email" class="form-control" placeholder="coloque seu email aqui para triagem." name="emailTriagem">
+							<span class="input-group-btn">
+								<button class="btn btn-main" type="submit">Enviar</button>
+							</span>
+						</form>
 				    </div>
 			  </div>
 

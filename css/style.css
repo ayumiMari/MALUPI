@@ -2306,8 +2306,9 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .footer {
-  background: #4cb0df;
+  background: #d4d4d4;
   padding: 50px 0;
+  margin-top: 20px;
 }
 .footer .footer-menu {
   margin-top: 30px;
